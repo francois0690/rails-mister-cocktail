@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+<h2>Recette du <%= @cocktail.name %></h2>
+
+<div>
+  <ul>
+    <% @doses.each do |d|%>
+      <li>Ajouter <%= d.description %> de <%= d.ingredient.name %>
+        <%= link_to "supprimer", dose_path(d), method: :delete, data: { confirm: 'Etes-vous sure ?' } %>
+
+      </li>
+    <% end %>
+  </ul>
+
+</div>
+
+<%= link_to 'Ajouter une dose', new_cocktail_dose_path(@cocktail) %> |
+<%= link_to 'Retour', cocktails_path %>

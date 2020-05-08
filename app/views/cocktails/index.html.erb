@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Liste des cocktails</h1>
+
+<ul>
+  <% @cocktails.each do |c| %>
+   <li><%= c.name %>
+
+     <%= link_to "Afficher", cocktail_path(c) %>
+
+  </li>
+  <% end %>
+</ul>
+
+<%= link_to "Ajouter un cocktail", new_cocktail_path %>
+
+
