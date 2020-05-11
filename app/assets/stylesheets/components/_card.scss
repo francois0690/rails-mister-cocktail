@@ -1,0 +1,41 @@
+.card {
+  background-size: cover;
+  background-position: center;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  padding: 0px 16px;
+  transition: all 0.5s ease;
+  opacity: 1;
+
+  a {
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+    text-decoration: none;
+    opacity: 0;
+    transition: all .2s ease;
+  }
+
+  h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  }
+}
+
+.card:hover {
+  opacity: 0.8;
+
+  transform:scale(1.05);
+  a {
+    opacity: 1;
+  }
+}
+
+
+

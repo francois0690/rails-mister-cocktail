@@ -1,17 +1,88 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Liste des cocktails</h1>
-
-<ul>
-  <% @cocktails.each do |c| %>
-   <li><%= c.name %>
-
-     <%= link_to "Afficher", cocktail_path(c) %>
-
-  </li>
-  <% end %>
-</ul>
-
-<%= link_to "Ajouter un cocktail", new_cocktail_path %>
+<div class="container-page">
 
 
+  <p id="notice"><%= notice %></p>
+
+  <!-- <h1>Liste des cocktails</h1> -->
+
+
+  <div class="entete">
+    <img id="logo" src="/assets/lewagonbar.png" alt="logo">
+  </div>
+
+  <div class="cards-container">
+    <div class="cards">
+
+<!--
+      <% @cocktails.each do |c| %>
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(/assets/c<%= rand(1..13) %>.jpg)">
+          <h2><%= c.name %></h2>
+          <%= link_to "voir les ingrédients", cocktail_path(c) %>
+        </div>
+      <% end %>
+
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(/assets/c4.jpg)">
+        <h2>Mojito</h2>
+        <a href="/cocktails/1">voir les ingrédients</a>
+      </div>
+
+
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(/assets/c5.jpg)">
+        <h2>Margarita</h2>
+        <a href="/cocktails/2">voir les ingrédients</a>
+      </div>
+
+
+
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(/assets/c6.jpg)">
+        <h2>Bloody Mary</h2>
+        <a href="/cocktails/2">voir les ingrédients</a>
+      </div>
+
+
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(/assets/c11.jpg)">
+        <h2>Ti Punch</h2>
+        <a href="/cocktails/2">voir les ingrédients</a>
+      </div>
+
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(/assets/c9.jpg)">
+        <h2>Sex on the Beach</h2>
+        <a href="/cocktails/4">voir les ingrédients</a>
+      </div>
+
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(/assets/c12.jpg)">
+        <h2>Pina Colada</h2>
+        <a href="/cocktails/4">voir les ingrédients</a>
+      </div>
+
+      <div class="card" style="background-image: linear-gradient(rgba(80,80,80,0.3), rgba(0,0,0,0.7))">
+        <h2>Ajouter un cocktail</h2>
+        <a href="/cocktails/4">voir les ingrédients</a>
+      </div>
+
+-->
+    </div>
+
+
+    <!-- <img class="img-r" src="/assets/deco_r_b.jpg" alt="imgr"> -->
+
+  </div>
+
+</div>
+
+<div>
+
+  <ul>
+    <% @cocktails.each do |c| %>
+     <li><%= c.name %>
+
+       <%= link_to "Afficher", cocktail_path(c) %>
+
+    </li>
+    <% end %>
+  </ul>
+
+  <%= link_to "Ajouter un cocktail", new_cocktail_path %>
+
+
+</div>

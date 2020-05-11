@@ -13,12 +13,13 @@ Rails.application.routes.draw do
   get 'cocktails/edit'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
-  # resources :cocktails do
-  #   resources :doses, only
-  #   resources :ingredients
-  # end
 
-  resources :cocktails, only: [ :show, :index, :new, :create ] do
+# root to: 'cocktails#index'
+# resources :cocktails, except: :index
+
+
+root to: 'cocktails#index'
+  resources :cocktails, only: [ :show, :new, :create ] do
     resources :doses, only: [ :new, :create ]
   end
   resources :doses, only: [ :destroy ]
