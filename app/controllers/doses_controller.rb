@@ -14,7 +14,7 @@ class DosesController < ApplicationController
     @dose.cocktail = @cocktail
     @dose.save
     if @dose.save
-      redirect_to cocktail_path(@cocktail), notice: "La dose létale a été ajoutée."
+      redirect_to cocktail_path(@cocktail), notice: "La dose létale a été ajoutée..."
     else
       render :new
     end

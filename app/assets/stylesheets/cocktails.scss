@@ -3,38 +3,30 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 body {
-  background-color: white;
-
+  // background-color: black;
 }
+
 .entete {
   text-align: center;
-  background: white;
+  background: black;
 }
 
 #logo {
-  width: 400px;
+  width: 500px;
   margin-bottom: 28px;
 }
 
 .container-page {
-  width: 80%;
-  margin: 24px auto;
-  background: white;
-  //box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url("/assets/back3_a.jpg");
+  background-size: cover;
+  margin: 0px auto;
   padding: 8px 8px;
- // background: linear-gradient(rgba(255,255,255,1), rgba(0,200,200,0.1));
- // background-image: linear-gradient(rgba(255,255,255,1), rgba(100,100,100,0.2)), url("/assets/back3_a.jpg");
- // background-size: cover;
- // background-position: center;
+
 }
 
 .cards-container {
-  // background: linear-gradient(rgba(255,255,255,1), rgba(100,100,100,0.2));
-  // , url("/assets/back3_a.jpg");
-  // background-size: cover;
-  // background-position: center;
-
-  // width: 100%;
   // margin: 0 auto;
   display: flex;
 
@@ -42,19 +34,90 @@ body {
     flex-grow: 1;
     padding: 30px;
   }
-  // .img-r {
-  //   width: 200px;
-
-
-    // width: 20%;
-    // height: 100vh;
-    // position: sticky;
-    // top: 0px;
-    // background-size: cover;
-  //   object-fit: cover;
-  // }
 }
 
 #notice {
   align-text: center;
+  font-size: 18px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+  color:white;
+}
+
+.container-show {
+width: 100%;
+background: black;
+
+background-position: center;
+  // position: sticky;
+  // top: 0;
+  // width: 100%;
+
+  margin: 0px auto;
+
+.diviseur {
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 5px;
+  padding: 16px 32px;
+
+  .droite {
+
+    flex-grow: 1;
+    padding: 16px 58px;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url("/assets/back3_a.jpg");
+    border-radius: 5px;
+
+      .contenu {
+      // box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      box-shadow: 0 1px 20px rgba(255,255,255,0.3);
+      background: rgba(20,20,20,0.9);
+      margin-top: 16px;
+      border-radius: 5px;
+      padding: 16px 32px;
+      color: white;
+
+width: 90%;
+
+      font-size: 18px;
+      font-weight: lighter;
+      margin-bottom: 20px;
+
+      a {
+
+      text-decoration: none;
+      color: white;
+
+        i {
+          color: rgba(255,255,255,0.7);
+          font-size: 20px;
+        }
+      }
+      li {
+        list-style: none;
+      }
+      ul {
+        padding-bottom: 16px;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: rgba(205,205,205,0.4);
+      }
+      p {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+
+
+  img {
+    width: 30%;
+    top: 0;
+    // height: 800px;
+    object-fit: cover;
+    opacity: 0.7;
+
+  }
+}
+
 }

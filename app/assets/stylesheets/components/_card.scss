@@ -6,10 +6,10 @@
   justify-content: center;
   align-items: flex-start;
   border-radius: 5px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 5px rgba(255,255,255,0.3);
   padding: 0px 16px;
   transition: all 0.5s ease;
-  opacity: 1;
+  opacity: 0.8;
 
   a {
     color: white;
@@ -22,15 +22,14 @@
 
   h2 {
     color: white;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
   }
 }
 
 .card:hover {
-  opacity: 0.8;
-
+  opacity: 1;
   transform:scale(1.05);
   a {
     opacity: 1;
@@ -38,4 +37,64 @@
 }
 
 
+.card-show {
 
+  background-size: cover;
+  background-position: center;
+  width: 90%;
+  height: 350px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 1px 20px rgba(255,255,255,0.3);
+
+
+
+  padding: 0px 16px;
+
+  opacity: 1;
+
+  h2 {
+    color: white;
+    font-size: 58px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  }
+}
+
+
+
+
+.card-add {
+  background-size: cover;
+  background-position: center;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  padding: 0px 16px;
+  transition: all 0.5s ease;
+  opacity: 0.8;
+  text-align: center;
+
+
+
+  a {
+    color: white;
+    font-size: 32px;
+    font-weight: lighter;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+    text-decoration: none;
+  }
+}
+
+.card-add:hover {
+  opacity: 1;
+
+  transform:scale(1.05);
+
+}

@@ -1,17 +1,60 @@
-<p id="notice"><%= notice %></p>
-<h2>Recette du <%= @cocktail.name %></h2>
+<div class="container-show">
 
-<div>
-  <ul>
-    <% @doses.each do |d|%>
-      <li>Ajouter <%= d.description %> de <%= d.ingredient.name %>
-        <%= link_to "supprimer", dose_path(d), method: :delete, data: { confirm: 'Etes-vous sure ?' } %>
 
-      </li>
-    <% end %>
-  </ul>
+  <div class="diviseur">
+    <img src="/assets/deco.jpg" alt="">
+    <div class="droite">
+
+      <p id="notice"><%= notice %></p>
+      <!--  <h2>Recette du <%= @cocktail.name %></h2> -->
+
+
+      <% if @cocktail.photo.attached? %>
+        <div class="card-show" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path @cocktail.photo.key, height: 300, width: 400 %>)">
+
+
+<!-- <div class="card-show" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path @cocktail.photo.key %>)">
+ -->
+
+
+          <h2><%= @cocktail.name %></h2>
+        </div>
+      <% else %>
+        <div class="card-show" style="background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(/assets/vase2.jpg)">
+          <h2><%= @cocktail.name %></h2>
+        </div>
+
+      <% end %>
+
+      <div class="contenu">
+        <%= link_to new_cocktail_dose_path(@cocktail) do %>
+            Ingrédients
+            <i class="fas fa-plus-circle"></i>
+        <% end %>
+
+        <ul>
+            <% @doses.each do |d|%>
+            <li><%= d.description %> de <%= d.ingredient.name %>
+              <%= link_to dose_path(d), method: :delete, data: { confirm: 'Etes-vous sure ?' } do %>
+              <i class="fas fa-trash-alt"></i>
+              <% end %>
+            </li>
+          <% end %>
+
+        </ul>
+
+        <p>Note: 3/5</p>
+        <p>Votes: 258</p>
+      </div>
+
+      <%= link_to "Retour", root_path, class: "btn btn-gradient" %>
+      <!-- # <%= link_to 'Retour', root_path %> -->
+</div>
+    </div>
 
 </div>
 
-<%= link_to 'Ajouter une dose', new_cocktail_dose_path(@cocktail) %> |
-<%= link_to 'Retour', root_path %>
+</div>
+
+
+
