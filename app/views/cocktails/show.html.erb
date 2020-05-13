@@ -6,16 +6,9 @@
     <div class="droite">
 
       <p id="notice"><%= notice %></p>
-      <!--  <h2>Recette du <%= @cocktail.name %></h2> -->
-
 
       <% if @cocktail.photo.attached? %>
         <div class="card-show" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path @cocktail.photo.key, height: 300, width: 400 %>)">
-
-
-<!-- <div class="card-show" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path @cocktail.photo.key %>)">
- -->
-
 
           <h2><%= @cocktail.name %></h2>
         </div>
@@ -48,7 +41,7 @@
       </div>
 
       <%= link_to "Retour", root_path, class: "btn btn-gradient" %>
-      <!-- # <%= link_to 'Retour', root_path %> -->
+
 </div>
     </div>
 
