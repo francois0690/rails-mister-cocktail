@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-ing = ['jus de citron', 'rhum blanc', 'tequila', "jus d'orange", 'jus de tomate', 'cognac', 'gin', 'whisky', 'eau pétillante', 'champagne', 'sirop de fraise', 'sirop de grenadine', 'coca cola', 'feuilles de menthe', 'glacons', 'triple sec', 'cacolac', 'jus de banane', "jus d'ananas", 'pastis', 'jus de chaussette', 'sirop de menthe', 'sirop de cassis', 'jus de citron vert', 'glace pilée', 'sucre', 'zeste de citron', "zeste d'orange", 'eau plate', 'vin blanc', 'vin mousseux', "sirop d'orange sanguine", 'limonade', 'cornichon', 'cointreau', "sirop de sucre de canne"]
+ing = ['vodka', 'jus de citron', 'rhum blanc', 'tequila', "jus d'orange", 'jus de tomate', 'cognac', 'gin', 'whisky', 'eau pétillante', 'champagne', 'sirop de fraise', 'sirop de grenadine', 'coca cola', 'feuilles de menthe', 'glacons', 'triple sec', 'cacolac', 'jus de banane', "jus d'ananas", 'pastis', 'jus de chaussette', 'sirop de menthe', 'sirop de cassis', 'jus de citron vert', 'glace pilée', 'sucre', 'zeste de citron', "zeste d'orange", 'eau plate', 'vin blanc', 'vin mousseux', "sirop d'orange sanguine", 'limonade', 'cornichon', 'cointreau', "sirop de sucre de canne", "martini rouge", "martini blanc", "campari", "chambord", "jus de cranberry", "curacao bleu","rhum ambré", "lait de coco"]
 
 ing.each do |i|
   Ingredient.create(name: i)

@@ -1,5 +1,5 @@
 class CocktailsController < ApplicationController
-before_action :set_a_cocktail, only: [:destroy, :show, :edit, :update, :destroy]
+before_action :set_a_cocktail, only: [:destroy, :show, :edit, :update]
 
   def show
     # @ingredients = @cocktail.ingredients
@@ -24,6 +24,12 @@ before_action :set_a_cocktail, only: [:destroy, :show, :edit, :update, :destroy]
     else
       render :new
     end
+  end
+
+  def destroy
+    temp = @cocktail.name
+    @cocktail.destroy
+    redirect_to root_path, notice: "Le cocktail #{temp} a été supprimé."
   end
 
 private
