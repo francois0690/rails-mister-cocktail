@@ -1,9 +1,18 @@
-<h1>Ajouter une dose à la recette du <%= @cocktail.name %></h1>
+<div class="container">
+  <div class="entete">
+      <%= image_tag "logo.png", id:"logo" %>
+    </div>
+  <div class="myform">
 
-<%= simple_form_for [ @cocktail, @dose ] do |f| %>
-  <%= f.input :description %>
-  <%= f.association :ingredient %>
-  <%= f.submit %>
-<% end %>
+    <h2>Ajouter une dose à la recette du <%= @cocktail.name %></h2>
 
-<%= link_to 'Annuler', cocktail_path(@cocktail) %>
+    <%= simple_form_for [ @cocktail, @dose ] do |f| %>
+      <%= f.input :description, :label => "Description", hint: "ex: 2cl, 3 feuilles, 1 zest etc..." %>
+      <%= f.association :ingredient, :label => "Ingrédients" %>
+      <%= f.button :submit, class: "btn btn-wagonbar" %>
+
+      <%= link_to 'Annuler', cocktail_path(@cocktail), class: "btn btn-wagonbar" %>
+  <% end %>
+  </div>
+
+</div>

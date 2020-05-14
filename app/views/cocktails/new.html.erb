@@ -1,10 +1,20 @@
-<h1>Créer un nouveau Cocktail</h1>
+<div class="container">
+    <div class="entete">
+      <%= image_tag "logo.png", id:"logo" %>
+    </div>
+  <div class="myform">
+    <h2>Créer un nouveau Cocktail</h2>
 
-<%= simple_form_for [ @cocktail ] do |f| %>
-  <%= f.input :name %>
-  <%= f.input :photo, as: :file %>
-  <%= f.submit %>
-<% end %>
+    <%= simple_form_for [ @cocktail ] do |f| %>
+      <%= f.input :name, :label =>"Nom du cocktail" %>
+      <%= f.input :photo, as: :file, :label =>"Photo de votre cocktail", hint: 'Choisir un fichier image jpg ou png' %>
+      <!-- <%= f.submit %> -->
+      <%= f.button :submit, class: "btn btn-wagonbar" %>
 
-<%= link_to 'Annuler', root_path %>
+    <%= link_to "Annuler", root_path, class: "btn btn-wagonbar" %>
+
+    <% end %>
+  </div>
+
+</div>
 

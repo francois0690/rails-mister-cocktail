@@ -39,3 +39,20 @@
   background: linear-gradient(#147EFF, #0F67DA);
   color: white;
 }
+
+.btn-wagonbar {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: linear-gradient(rgb(50, 150, 150), rgb(1, 40, 40));
+  transition: background 0.3s ease;
+  border: 1px solid rgb(1, 40, 40);
+//rgb(55, 239, 234)
+}
+
+
+.btn-wagonbar:hover {
+  background: linear-gradient(rgb(70, 180, 180), rgb(20, 60, 60));
+  color: white;
+}
