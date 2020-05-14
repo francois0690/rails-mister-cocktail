@@ -8,8 +8,8 @@
 
     <%= simple_form_for [ @cocktail, @dose ] do |f| %>
       <%= f.input :description, :label => "Description", hint: "ex: 2cl, 3 feuilles, 1 zest etc..." %>
-      <%= f.association :ingredient, :label => "Ingrédients" %>
-      <%= f.button :submit, class: "btn btn-wagonbar" %>
+      <%= f.association :ingredient, :label => "Ingrédient" %>
+      <%= f.button :submit, "Créer une dose", class: "btn btn-wagonbar" %>
 
       <%= link_to 'Annuler', cocktail_path(@cocktail), class: "btn btn-wagonbar" %>
   <% end %>

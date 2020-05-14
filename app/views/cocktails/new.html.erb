@@ -3,13 +3,13 @@
       <%= image_tag "logo.png", id:"logo" %>
     </div>
   <div class="myform">
-    <h2>Créer un nouveau Cocktail</h2>
+    <h2>Créer un nouveau cocktail</h2>
 
     <%= simple_form_for [ @cocktail ] do |f| %>
       <%= f.input :name, :label =>"Nom du cocktail" %>
       <%= f.input :photo, as: :file, :label =>"Photo de votre cocktail", hint: 'Choisir un fichier image jpg ou png' %>
       <!-- <%= f.submit %> -->
-      <%= f.button :submit, class: "btn btn-wagonbar" %>
+      <%= f.button :submit, "Créer un cocktail", class: "btn btn-wagonbar" %>
 
     <%= link_to "Annuler", root_path, class: "btn btn-wagonbar" %>
 
