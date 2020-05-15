@@ -17,26 +17,16 @@ body {
   #logo {
     width: 500px;
     margin-bottom: 8px;
+  }
 }
-}
-
-
 
 .container-page {
   width: 100%;
   padding: 8px 8px;
-
-  // height: 100vh;
-   // background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), asset_url("back3_a.jpg");
-  //background-size: cover;
-  // margin: 0px auto;
-
 }
 
 .cards-container {
-  // margin: 0 auto;
   display: flex;
-
   .cards {
     flex-grow: 1;
     padding: 30px;
@@ -59,7 +49,6 @@ padding: 8px 8px;
   display: flex;
   justify-content: flex-start;
   border-radius: 5px;
-  // padding: 16px 32px;
 
   .droite {
 
@@ -70,7 +59,6 @@ padding: 8px 8px;
     border-radius: 5px;
 
       .contenu {
-      // box-shadow: 0 5px 15px rgba(0,0,0,0.2);
       box-shadow: 0 1px 20px rgba(255,255,255,0.3);
       background: rgba(20,20,20,0.9);
       margin-top: 16px;
@@ -128,15 +116,13 @@ padding: 8px 8px;
 .myform {
   margin: 16px auto;
   width: 70%;
-  // text-align: center;
   padding: 16px 32px;
   font-size: 18px;
   font-weight: lighter;
-  // margin-bottom: 8px;
   color:white;
   box-shadow: 0 1px 20px rgba(255,255,255,0.3);
   background: rgba(20,20,20,0.9);
-  // background-color: blackblue;
+
 
   h2 {
     font-size: 32px;
