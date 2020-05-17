@@ -5,7 +5,7 @@
 body {
   background-color: black;
   height: 100vh;
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), asset_url("back3_a.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), asset_url('back3_a.jpg');
   background-size: cover;
 
 }
