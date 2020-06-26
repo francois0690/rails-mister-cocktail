@@ -13,7 +13,7 @@ ing.each do |i|
     p "on ajoute #{i}"
     Ingredient.create(name: i)
   else
-    p "l'ingrédient #{i} existe déjà"
+    p "l'ingrédient #{i} existe déjà banane"
   end
 end
 
